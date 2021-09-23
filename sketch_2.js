@@ -7,15 +7,15 @@ function setup() {
   background("black");
   stroke("white");
   strokeWeight(0.5);
-  line(0, windowHeight * 0.1, windowWidth, windowHeight * 0.1);
-  line(0, windowHeight * 0.2, windowWidth, windowHeight * 0.2);
+  line(0, windowHeight * 0.05, windowWidth, windowHeight * 0.05);
+  line(0, windowHeight * 0.15, windowWidth, windowHeight * 0.15);
   line(0, windowHeight * 0.3, windowWidth, windowHeight * 0.3);
-  line(0, windowHeight * 0.4, windowWidth, windowHeight * 0.4);
+  // line(0, windowHeight * 0.4, windowWidth, windowHeight * 0.4);
   line(0, windowHeight * 0.5, windowWidth, windowHeight * 0.5);
-  line(0, windowHeight * 0.6, windowWidth, windowHeight * 0.6);
+  // line(0, windowHeight * 0.6, windowWidth, windowHeight * 0.6);
   line(0, windowHeight * 0.7, windowWidth, windowHeight * 0.7);
-  line(0, windowHeight * 0.8, windowWidth, windowHeight * 0.8);
-  line(0, windowHeight * 0.9, windowWidth, windowHeight * 0.9);
+  line(0, windowHeight * 0.85, windowWidth, windowHeight * 0.85);
+  line(0, windowHeight * 0.95, windowWidth, windowHeight * 0.95);
 }
 
 function draw() {
@@ -23,13 +23,29 @@ function draw() {
   noStroke();
   fill("white");
   circle(0, mouseY, 5);
-  circle(0, mouseY * 0.5, 5);
-  circle(0, mouseY * 0.3, 5);
-  circle(0, mouseY * 0.1, 5);
-  strokeWeight(5);
-  stroke(255, 255, 255, 20);
-  line(0, mouseY, 0, windowHeight);
-  line(0, mouseY * 0.5, 0, windowHeight);
-  line(0, mouseY * 0.3, 0, windowHeight);
-  line(0, mouseY * 0.1, 0, windowHeight);
+  // circle(0, mouseY * 0.7, 5);
+  circle(0, mouseY * 0.6, 4);
+  circle(0, mouseY * 0.3, 4);
+  circle(0, mouseY * 0.1, 4);
+  push();
+  translate(0, windowHeight - windowHeight * 0.1);
+  circle(0, mouseY * 0.1, 4);
+  pop();
+  push();
+  translate(0, windowHeight - windowHeight * 0.3);
+  circle(0, mouseY * 0.3, 4);
+  pop();
+  push();
+  translate(0, windowHeight - windowHeight * 0.6);
+  circle(0, mouseY * 0.6, 4);
+  pop();
+  // push();
+  // translate(0, windowHeight - windowHeight * 0.7);
+  // circle(0, mouseY * 0.7, 5);
+  // pop();
+
+  // line(0, mouseY, 0, windowHeight);
+  // line(0, mouseY * 0.5, 0, windowHeight);
+  // line(0, mouseY * 0.3, 0, windowHeight);
+  // line(0, mouseY * 0.1, 0, windowHeight);
 }
