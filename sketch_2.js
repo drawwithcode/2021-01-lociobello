@@ -22,30 +22,24 @@ function draw() {
   translate(frameCount * 2, 0);
   noStroke();
   fill("white");
+
   circle(0, mouseY, 5);
-  // circle(0, mouseY * 0.7, 5);
   circle(0, mouseY * 0.6, 4);
   circle(0, mouseY * 0.3, 4);
   circle(0, mouseY * 0.1, 4);
+
   push();
   translate(0, windowHeight - windowHeight * 0.1);
   circle(0, mouseY * 0.1, 4);
   pop();
+
   push();
   translate(0, windowHeight - windowHeight * 0.3);
   circle(0, mouseY * 0.3, 4);
   pop();
+
   push();
   translate(0, windowHeight - windowHeight * 0.6);
   circle(0, mouseY * 0.6, 4);
   pop();
-  // push();
-  // translate(0, windowHeight - windowHeight * 0.7);
-  // circle(0, mouseY * 0.7, 5);
-  // pop();
-
-  // line(0, mouseY, 0, windowHeight);
-  // line(0, mouseY * 0.5, 0, windowHeight);
-  // line(0, mouseY * 0.3, 0, windowHeight);
-  // line(0, mouseY * 0.1, 0, windowHeight);
 }
