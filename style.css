@@ -6,6 +6,10 @@
   font-family: univers-light;
   src: url(fonts/UniversLTStd-Light.otf);
 }
+@font-face {
+  font-family: studiopro;
+  src: url(fonts/Studio\ Pro\ Regular.ttf);
+}
 
 html,
 body {
