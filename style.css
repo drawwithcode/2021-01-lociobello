@@ -1,8 +1,53 @@
-html, body {
+@font-face {
+  font-family: univers;
+  src: url(fonts/UniversLTStd.otf);
+}
+@font-face {
+  font-family: univers-light;
+  src: url(fonts/UniversLTStd-Light.otf);
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
+  letter-spacing: 1px;
+  color: white;
+  font-family: inter;
 }
 
 canvas {
   display: block;
+}
+
+.info {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+}
+
+div {
+  position: absolute;
+}
+
+.a {
+  left: 10px;
+  top: 10px;
+}
+.b {
+  left: 10px;
+  top: 25%;
+}
+.c {
+  left: 10px;
+  top: 50%;
+}
+.d {
+  left: 10px;
+  top: 75%;
+}
+.e {
+  left: 10px;
+  bottom: 10px;
 }
